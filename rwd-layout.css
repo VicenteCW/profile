@@ -1,0 +1,52 @@
+.headline{
+    font-size: 30px; font-weight: bold;
+    margin-bottom: 15 px; text-align: center;
+
+}
+
+.desktop-menu{
+    display: block;
+    text-align: center;
+}
+.mobile-menu{
+    display: none;
+    text-align: center;
+}
+
+.list{
+    display:flex; justify-content: center;
+
+}
+.product {
+    flex:none; width:280px; margin:10px;
+    background-color: #ffcccc;
+}
+@media (max-width:1250px){
+    
+    /*螢幕寬度小於1250px, 套用這個區塊的css */
+    .list {
+        flex-wrap:wrap;
+    }
+    .product{
+        width: 45%; 
+    }}
+@media (max-width:500px){
+    /*螢幕寬度小於500px, 套用這個區塊的css */
+    .headline{
+        font-size: 20px;text-align: center;
+    }
+    .desktop-menu{
+        display: none;
+        text-align: center;
+    }
+    .mobile-menu{
+        display: block;
+        justify-content: center;
+    }
+    .list{
+        flex-wrap: wrap;}
+    .product{
+        width:90%;
+    }
+        
+}
