@@ -3,30 +3,112 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale =1.0"/>
-        <title>Personal Profile</title>
+        <title>Vicente personal profile</title>
+        <style>
+            body{background-color: #cccccc;}
+        </style>
         <link rel="stylesheet" type ="text/css" href="rwd-layout.css"/>
     </head>
     <body>
-        <div class = "headline"> 這是一個回應式設計網的範例 for Wehelp curriculum </div>
+        <script>
+            function over(elem){
+                elem.style.backgroundColor="#ddaaaa"
+            }
+            function out(elem){
+                elem.style.backgroundColor="#ffcccc"
+            }
+            function down(elem){
+                elem.style.fontWeight="bold"
+            } 
+            function up(elem){
+                elem.style.fontWeight="normal"
+            }
+        </script>
+        
+        <div class = "headline"> <h1>王 鈞 Vicente</h1></div>
         <div class="desktop-menu"> 選項一、 選項二、 選項三、</div>
         <div class="mobile-menu">
             <img src ="menu.svg" width="30" height="30"/>
         </div>
-        <div class="welcome">
-            <div class ="text">歡迎光臨</div>
         <div class="list">
    
-            <div class = "product">兩百字內的個人簡介。</div>
-            <div class = "product">為了成為軟體工程師，做過什麼努力？若有具體作品請分享給我們。</div>
-            <div class = "product">如果參與這個訓練，會怎麼安排學習時間？</div>
-            <div class = "product">是否有想要加入的公司？為什麼想加入該公司？</div>    
-            <div class = "product">請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</div> 
-            <div class = "product">關於這份申請網頁，分享一個開發時的技術心得。</div> 
-            <div class = "product">請用簡短兩三句話，描述對你而言，最重要的一項人際交往原則。</div> 
-            <div class = "product">其他想要對我們說的事情？</div> 
+            <div class = "product"
+            onmouseover="over(this)"; onmouseout="out(this)"
+            onmousedown="down(this)"; onmouseup="up(this)"
+            >個人簡介</div>
+            <div class = "product" 
+            onmouseover="over(this)"; onmouseout="out(this)"
+            onmousedown="down(this)"; onmouseup="up(this)"
+            >學經歷</div>
+            <div class = "product"
+            onmouseover="over(this)"; onmouseout="out(this)"
+            onmousedown="down(this)"; onmouseup="up(this)"
+            >著作/作品</div>
+            <div class = "product"
+            onmouseover="over(this)"; onmouseout="out(this)"
+            onmousedown="down(this)"; onmouseup="up(this)"
+            ><a href="https://www.google.com" >其他</a></div>    
+        
+        
+        </div>
+        <div style = "background-color: blue; font-weight: bold;color:white; padding:10px">兩百字內的個人簡介。</div>
+        <div>
+            靜宜大學西班牙語文系及寰宇管理碩士畢業 ，個性上的優點就是積極樂觀，也就是因為這樣的個性讓我勇於面對挫折。
+            我期望未來在工作上可以更大成就，並對所服務的公司及團隊有所貢獻。興趣熱愛運動，如籃球、慢跑等。
+            從籃球這個團體運動中了解到有效的團隊的合作與溝通的重要，每個位置更有其重要性，各司其職。
+            就如同NBA傳奇球員賈霸所說「一個人可以作為團隊的中流砥柱，卻不能夠取代整個團隊。」— Kareem Abdul-Jabbar
+        </div>
+        <div style = "background-color: blue; font-weight: bold;color:white;padding:10px">為了成為軟體工程師，做過什麼努力？若有具體作品請分享給我們。</div>
+        <div>
+            為了成為軟體工程師，參加了一些實體的程式設計課程
+                <ul>
+                    <li>參加python 實體及線上的課程</li>
+                    <li>看完彭彭HTML、CSS、Javascript 及Python 的線上課程，然後複習一次</li>
+                    <li>NodeJS
+                    <li>加入 AIA 人工智慧學校技術領袖班
+                </ul>
+                然而這些課程都是拼拼湊湊，沒有自己完成過專案，或者可以獨力完成專案的能力 
+                ，因此希望加入WeHelp的協助與訓練來把自己的程式能力及獨力完成專案的能力
+                建立起來。此外，也希望能透過WeHelp可以轉職成為一名軟體工程師。
+        </div>
+        <div style = "background-color: blue; font-weight: bold; color:white; padding:10px">如果參與這個訓練，會怎麼安排學習時間？</div>
+            <div> 
+                因為已辭去原有的工作，目前待業，專心轉職。如果參加WeHelp的訓練會安排一個禮拜平均40-60個小時在這個訓練program
+                上來完成各階度的任務。
+                第二階段及第三階段，已有任務會相對更加沉重的心理建設，預計至少會規畫60 小時以上的時間在學習、訓練即完成任務。
+                並且建設自己的心態為日後公司上班也如同這種工作模式。
 
+            </div>
         
-        
+        <div style = "background-color: blue; font-weight: bold;color:white;padding:10px">是否有想要加入的公司？為什麼想加入該公司？</div>    
+        <div>
+            想要加入像是愛卡拉或者appier 這類型AI的公司。
+            因為我想要往人工智慧領域的軟體程師或資料科學家做為往後的職涯發展。
+            <ul>
+                <li>iKara</li>
+                <li>Appier</li>
+            </ul>
+        </div>
+    
+        <div style = "background-color: blue; font-weight: bold;color:white;padding:10px">請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</div> 
+        <div>
+            當產生負面情緒的時候，我往往選擇去跑步紓壓，因為跑步的時候可以放鬆心情
+            ，同時透過慢跑可以維持體力，挑整自我的情緒。
+        </div>
+        <div style = "background-color: blue; font-weight: bold;color:white;padding:10px">關於這份申請網頁，分享一個開發時的技術心得。</div> 
+        <div>
+            當在開發申請網頁時，為了確保無論是在手機、平板還是電腦上，用戶都能夠舒適地閱讀內容。因此採用了RWD的技術，
+            也就是說使用相對單位（如％）而不是固定像素值來定義元素的寬度和高度，從而使它們能夠根據螢幕大小進行動態調整。
+            從中也慢慢地認識RWD彈性佈局的技巧及對手機、平板及電腦螢幕的尺寸有相對的認知。
+        </div>
+        <div style = "background-color: blue; font-weight: bold;color:white;padding:10px">請用簡短兩三句話，描述對你而言，最重要的一項人際交往原則。</div> 
+        <div>
+            最重要的一項人際交往原則，對我來說最重要為對方是否也會像自己一樣以誠相待彼此。
+            當彼此的頻率對了，溝通就容易了，溝通容易了事情就都簡單了。
+        </div>
+        <div style = "background-color: blue; font-weight: bold;color:white;padding:10px">其他想要對我們說的事情？</div> 
+        <div>
+            Thanks for your HELP
         </div>
 
     </body>
